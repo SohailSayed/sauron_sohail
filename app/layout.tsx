@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import styles from "./page.module.css";
 import SidebarLayout from "./sidebar/layout";
+import ModelLayout from "./model/layout";
 
 export const metadata: Metadata = {
   title: "Sohail's Sauron Pitch",
@@ -11,6 +12,7 @@ export default function RootLayout() {
     <html lang="en">
       <body className={styles.background}>
         <SidebarLayout />
+        <ModelLayout />
       </body>
     </html>
   );

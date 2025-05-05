@@ -1,14 +1,16 @@
 .background {
-    background-color: rgba(220, 205, 194, 0.8);
+    margin: 5px;
+    background-color: rgba(220, 205, 194, 0.95);
     display: flex;
     position: absolute;
-    height: 100vh;
+    height: 99vh;
     width: 400px;
     flex-direction: column;
     border-radius: 2vh;
     overflow: hidden;
-    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.1);
     user-select: none;
+    z-index: 10;
   }
 
 .stream {
