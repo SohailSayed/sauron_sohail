@@ -1,0 +1,9 @@
+.background {
+    border: 1px solid red;
+    /* temp ^ */
+    background-color: #DCCDC2;
+    display: flex;
+    position: absolute;
+    height: 100vh;
+    width: 30vw;
+  }
