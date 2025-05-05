@@ -23,7 +23,7 @@ function Model({ clipY }: { clipY: number }) {
   }, [gltf, clipY]);
 
   return (
-    <primitive object={gltf.scene} scale={0.0005} position={[0, 0, 0]} />
+    <primitive object={gltf.scene} scale={0.00065} position={[0, 0, 0]} />
   );
 }
 
