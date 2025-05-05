@@ -14,8 +14,8 @@ function Model({ clipY }: { clipY: number }) {
   useEffect(() => {
     const clippingPlane = new THREE.Plane(new THREE.Vector3(0, -1, 0), clipY);
     gltf.scene.traverse((child) => {
-      if (child.isMesh) {
-        child.material.clippingPlanes = [clippingPlane];
+      if ((child as any).isMesh) {
+        (child as any).material.clippingPlanes = [clippingPlane];
       }
     });
   }, [gltf, clipY]);
