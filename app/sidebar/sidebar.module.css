@@ -1,17 +1,21 @@
 .background {
-    border: 1px solid red;
-    /* temp ^ */
-    background-color: #DCCDC2;
+    background-color: rgba(220, 205, 194, 0.8);
     display: flex;
     position: absolute;
     height: 100vh;
-    width: 30vw;
+    width: 400px;
     flex-direction: column;
+    border-radius: 2vh;
+    overflow: hidden;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.05);
+    user-select: none;
   }
 
 .stream {
     flex: 1;
     display: flex;
+    border-radius: 1.5vh;
+    overflow: hidden;
 }
 .streamImg{
     object-fit: cover;
@@ -46,4 +50,5 @@
 .propertAccess{
     display: flex;
     margin-bottom: 30%;
+    padding-top: 20px
 }
