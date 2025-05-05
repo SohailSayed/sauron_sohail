@@ -4,7 +4,7 @@ import React from "react";
 const Stream = () => {
   return (
     <div className={styles.stream}>
-        <img className={styles.streamImg} src={'/sampleStream.jpg'}/>
+        <img className={styles.streamImg} src={'/sampleStream.png'}/>
     </div>
   );
 }
