@@ -1,3 +1,5 @@
+import React from "react";
+
 export default function Home() {
-  return <>Sohail's Sauron Pitch</>;
+  return <>Sohail Sauron Pitch</>;
 }

@@ -1,10 +1,11 @@
 import styles from "./sidebar.module.css";
 import localFont from "next/font/local";
+import React from "react";
 
 const sonomaReg = localFont({ src: "../fonts/BRSonoma-Regular.otf" });
 const sonomaMed = localFont({ src: "../fonts/BRSonoma-Medium.otf" });
 
-const Profile = ({}) => {
+const Profile = () => {
   return (
     <div className={styles.profile}>
         <div className={styles.profileSection}>

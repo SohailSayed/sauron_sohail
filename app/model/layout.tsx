@@ -1,6 +1,8 @@
+/* eslint-disable @typescript-eslint/no-explicit-any, react/no-unknown-property */
 "use client";
 
-import { useRef, useState, useEffect } from "react";
+import React from "react";
+import { useState, useEffect } from "react";
 import * as THREE from "three";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, useGLTF } from "@react-three/drei";
@@ -41,7 +43,7 @@ export default function ModelLayout() {
             max={4}
             step={0.001}
             value={yCross}
-            onChange={(e) => setYCross(e.target.value)}
+            onChange={(e) => setYCross((e as any).target.value)}
             style={{ 
               width: "200px",
               marginLeft: "10px",
